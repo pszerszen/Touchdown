@@ -19,6 +19,8 @@
 		8615846E273ABBBA00A37B86 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8615846D273ABBBA00A37B86 /* Category.swift */; };
 		86158470273ABC0400A37B86 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8615846F273ABC0400A37B86 /* Player.swift */; };
 		86158472273ABC2C00A37B86 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86158471273ABC2C00A37B86 /* Product.swift */; };
+		86158474273ABD4600A37B86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86158473273ABD4600A37B86 /* Constants.swift */; };
+		86158476273ABD8900A37B86 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86158475273ABD8900A37B86 /* DataHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		8615846D273ABBBA00A37B86 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		8615846F273ABC0400A37B86 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		86158471273ABC2C00A37B86 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		86158473273ABD4600A37B86 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		86158475273ABD8900A37B86 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 		86158468273AB93A00A37B86 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				86158473273ABD4600A37B86 /* Constants.swift */,
+				86158475273ABD8900A37B86 /* DataHandler.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -211,6 +217,8 @@
 				8615846C273ABB6F00A37B86 /* Brand.swift in Sources */,
 				8615844E273AB36D00A37B86 /* TouchdownApp.swift in Sources */,
 				86158470273ABC0400A37B86 /* Player.swift in Sources */,
+				86158476273ABD8900A37B86 /* DataHandler.swift in Sources */,
+				86158474273ABD4600A37B86 /* Constants.swift in Sources */,
 				8615846E273ABBBA00A37B86 /* Category.swift in Sources */,
 				86158472273ABC2C00A37B86 /* Product.swift in Sources */,
 			);
