@@ -21,6 +21,7 @@
 		86158472273ABC2C00A37B86 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86158471273ABC2C00A37B86 /* Product.swift */; };
 		86158474273ABD4600A37B86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86158473273ABD4600A37B86 /* Constants.swift */; };
 		86158476273ABD8900A37B86 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86158475273ABD8900A37B86 /* DataHandler.swift */; };
+		86158479273AC2C900A37B86 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86158478273AC2C900A37B86 /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		86158471273ABC2C00A37B86 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		86158473273ABD4600A37B86 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		86158475273ABD8900A37B86 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		86158478273AC2C900A37B86 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +137,25 @@
 		86158469273AB94200A37B86 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8615847A273AC33400A37B86 /* Detail */,
+				86158477273ABFFB00A37B86 /* Home */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		86158477273ABFFB00A37B86 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				86158478273AC2C900A37B86 /* FooterView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8615847A273AC33400A37B86 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +235,7 @@
 				86158450273AB36D00A37B86 /* ContentView.swift in Sources */,
 				8615846C273ABB6F00A37B86 /* Brand.swift in Sources */,
 				8615844E273AB36D00A37B86 /* TouchdownApp.swift in Sources */,
+				86158479273AC2C900A37B86 /* FooterView.swift in Sources */,
 				86158470273ABC0400A37B86 /* Player.swift in Sources */,
 				86158476273ABD8900A37B86 /* DataHandler.swift in Sources */,
 				86158474273ABD4600A37B86 /* Constants.swift in Sources */,
