@@ -11,6 +11,10 @@
 		86158450273AB36D00A37B86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8615844F273AB36D00A37B86 /* ContentView.swift */; };
 		86158452273AB37000A37B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86158451273AB37000A37B86 /* Assets.xcassets */; };
 		86158455273AB37000A37B86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86158454273AB37000A37B86 /* Preview Assets.xcassets */; };
+		86158463273AB8AF00A37B86 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 8615845F273AB8AF00A37B86 /* product.json */; };
+		86158464273AB8AF00A37B86 /* brand.json in Resources */ = {isa = PBXBuildFile; fileRef = 86158460273AB8AF00A37B86 /* brand.json */; };
+		86158465273AB8AF00A37B86 /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = 86158461273AB8AF00A37B86 /* category.json */; };
+		86158466273AB8AF00A37B86 /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = 86158462273AB8AF00A37B86 /* player.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		8615844F273AB36D00A37B86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86158451273AB37000A37B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86158454273AB37000A37B86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8615845F273AB8AF00A37B86 /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
+		86158460273AB8AF00A37B86 /* brand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brand.json; sourceTree = "<group>"; };
+		86158461273AB8AF00A37B86 /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
+		86158462273AB8AF00A37B86 /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +59,13 @@
 		8615844C273AB36D00A37B86 /* Touchdown */ = {
 			isa = PBXGroup;
 			children = (
-				8615845B273AB38D00A37B86 /* App */,
 				86158451273AB37000A37B86 /* Assets.xcassets */,
+				8615845B273AB38D00A37B86 /* App */,
+				8615845E273AB89D00A37B86 /* Data */,
+				86158467273AB92E00A37B86 /* Model */,
 				86158453273AB37000A37B86 /* Preview Content */,
+				86158468273AB93A00A37B86 /* Utility */,
+				86158469273AB94200A37B86 /* View */,
 			);
 			path = Touchdown;
 			sourceTree = "<group>";
@@ -73,6 +85,38 @@
 				8615844F273AB36D00A37B86 /* ContentView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		8615845E273AB89D00A37B86 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				86158460273AB8AF00A37B86 /* brand.json */,
+				86158461273AB8AF00A37B86 /* category.json */,
+				86158462273AB8AF00A37B86 /* player.json */,
+				8615845F273AB8AF00A37B86 /* product.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		86158467273AB92E00A37B86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86158468273AB93A00A37B86 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		86158469273AB94200A37B86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +177,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86158466273AB8AF00A37B86 /* player.json in Resources */,
 				86158455273AB37000A37B86 /* Preview Assets.xcassets in Resources */,
+				86158464273AB8AF00A37B86 /* brand.json in Resources */,
+				86158465273AB8AF00A37B86 /* category.json in Resources */,
 				86158452273AB37000A37B86 /* Assets.xcassets in Resources */,
+				86158463273AB8AF00A37B86 /* product.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
