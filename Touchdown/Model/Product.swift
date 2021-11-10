@@ -5,7 +5,7 @@
 //  Created by Piotr Szerszeń on 09/11/2021.
 //
 
-import Foundation
+import SwiftUI
 
 struct Product : Codable, Identifiable {
 
@@ -16,19 +16,23 @@ struct Product : Codable, Identifiable {
     let description: String
     let color: [Double]
 
-    var red: Double {
+    var formattedPrice: String {
+        return "$\(price)"
+    }
+
+    var backgroundColor: Color {
+        return Color(red: red, green: green, blue: blue)
+    }
+
+    private var red: Double {
         return color[0]
     }
 
-    var green: Double {
+    private var green: Double {
         return color[1]
     }
 
-    var blue: Double {
+    private var blue: Double {
         return color[2]
-    }
-
-    var formattedPrice: String {
-        return "$\(price)"
     }
 }

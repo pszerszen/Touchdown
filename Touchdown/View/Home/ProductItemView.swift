@@ -19,7 +19,7 @@ struct ProductItemView: View {
                     .scaledToFit()
                 .padding(10.0)
             }
-            .background(Color(red: product.red, green: product.green, blue: product.blue))
+            .background(product.backgroundColor)
             .cornerRadius(12)
 
             Text(product.name)
