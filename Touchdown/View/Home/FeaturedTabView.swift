@@ -9,11 +9,9 @@ import SwiftUI
 
 struct FeaturedTabView: View {
 
-    private let players = DataHandler.main.players
-
     var body: some View {
         TabView {
-            ForEach(players) { player in
+            ForEach(DataHandler.main.players) { player in
                 FeaturedItemView(player: player)
                     .padding(.top, 10.0)
                     .padding(.horizontal, 15.0)
