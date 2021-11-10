@@ -35,11 +35,12 @@ struct ProductDetailView: View {
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(Color.gray)
                         .multilineTextAlignment(.leading)
-
-                    QuantityFavoriteDetailView()
-                        .padding(.vertical, 10.0)
-                    AddToCartDeatailView()
                 }
+
+                QuantityFavoriteDetailView()
+                    .padding(.vertical, 10.0)
+                AddToCartDeatailView()
+                    .padding(.bottom, 20.0)
             }
             .padding(.horizontal)
             .background(Color.white
