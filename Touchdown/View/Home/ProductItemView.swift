@@ -39,7 +39,7 @@ struct ProductItemView: View {
 
 struct ProductItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductItemView(DataHandler.main.products[0])
+        ProductItemView(DataHandler.main.sampleProduct)
             .previewLayout(.sizeThatFits)
     }
 }

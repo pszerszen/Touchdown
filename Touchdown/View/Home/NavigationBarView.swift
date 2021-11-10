@@ -13,12 +13,8 @@ struct NavigationBarView: View {
 
     var body: some View {
         HStack {
-            Button {
-
-            } label: {
-                Image(systemName: "magnifyingglass")
-                    .foregroundColor(Color.black)
-                    .font(.title)
+            Button {} label: {
+                Image(systemName: "magnifyingglass").navbarButton()
             }
             Spacer()
             LogoView()
@@ -30,13 +26,9 @@ struct NavigationBarView: View {
                     }
                 }
             Spacer()
-            Button {
-
-            } label: {
+            Button {} label: {
                 ZStack {
-                    Image(systemName: "cart")
-                        .foregroundColor(Color.black)
-                    .font(.title)
+                    Image(systemName: "cart").navbarButton()
 
                     Circle()
                         .fill(Color.red)
@@ -46,6 +38,13 @@ struct NavigationBarView: View {
             }
 
         }
+    }
+}
+
+fileprivate extension Image {
+    func navbarButton() -> some View {
+        self.font(.title)
+            .foregroundColor(.black)
     }
 }
 
