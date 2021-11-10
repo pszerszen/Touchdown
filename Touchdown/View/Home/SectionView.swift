@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SectionView: View {
 
-    @State var rotateClockwise: Bool
+    var rotateClockwise: Bool
 
     private var rotation: Double {
         return rotateClockwise ? 90 : -90
@@ -22,19 +22,25 @@ struct SectionView: View {
                 .font(.footnote)
                 .fontWeight(.bold)
                 .foregroundColor(Color.white)
-            .rotationEffect(Angle(degrees: rotation))
+                .rotationEffect(Angle(degrees: rotation))
             Spacer()
         }
-        .background(Color.gray.cornerRadius(12))
+        .background(colorGray.cornerRadius(12))
         .frame(width: 85)
     }
 }
 
 struct SectionView_Previews: PreviewProvider {
     static var previews: some View {
-        SectionView(rotateClockwise: true)
-            .previewLayout(.fixed(width: 120, height: 240))
-            .padding()
+        Group {
+            SectionView(rotateClockwise: false)
+                .previewLayout(.fixed(width: 120, height: 240))
+                .padding()
             .background(colorBackground)
+            SectionView(rotateClockwise: true)
+                .previewLayout(.fixed(width: 120, height: 240))
+                .padding()
+                .background(colorBackground)
+        }
     }
 }
