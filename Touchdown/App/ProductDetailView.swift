@@ -13,14 +13,28 @@ struct ProductDetailView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 5.0) {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            NavigationBarDetailView()
+                .padding(.horizontal)
+                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+
+            HeaderDeatailView()
+                .padding(.horizontal)
+                .zIndex(1)
+
+            Spacer()
         }
+        .zIndex(0)
+        .ignoresSafeArea(.all, edges: .all)
+        .background(shop.selectedProduct?.backgroundColor ??
+                    DataHandler.main.sampleProduct.backgroundColor)
+        .ignoresSafeArea(.all, edges: .all)
     }
 }
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
         ProductDetailView()
-            .previewLayout(.fixed(width: 35, height: 812))
+            .environmentObject(Shop())
+            .previewLayout(.fixed(width: 375, height: 812))
     }
 }
