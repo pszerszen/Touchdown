@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
         ZStack {
             VStack(spacing: 0.0) {
@@ -24,6 +25,10 @@ struct ContentView: View {
                             .frame(height: UIScreen.main.bounds.width / 1.475)
                             .padding(.vertical, 20.0)
                         CategoryGridView()
+
+                        TitleView("Helmets")
+
+                        TitleView("Brands")
 
                         FooterView()
                             .padding(.horizontal)
