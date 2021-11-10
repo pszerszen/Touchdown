@@ -22,6 +22,25 @@ struct ProductDetailView: View {
                 .zIndex(1)
 
             TopPartDetailView()
+                .padding(.horizontal)
+                .zIndex(1)
+
+            VStack {
+                RatingsSizesDetailView()
+                    .padding(.top, -20.0)
+                    .padding(.bottom, 10.0)
+
+                ScrollView(.vertical, showsIndicators: false) {
+                    Text(shop.extract { $0.description })
+                        .font(.system(.body, design: .rounded))
+                        .foregroundColor(Color.gray)
+                        .multilineTextAlignment(.leading)
+                }
+            }
+            .padding(.horizontal)
+            .background(Color.white
+                            .clipShape(CustomShape())
+                            .padding(.top, -105.0))
         }
         .zIndex(0)
         .ignoresSafeArea(.all, edges: .all)
