@@ -15,7 +15,7 @@ class DataHandler {
     let brands: [Brand]
     let sampleProduct: Product
 
-    let main = DataHandler()
+    static let main = DataHandler()
 
     private init() {
         players = Bundle.main.decode("player.json")
