@@ -15,9 +15,10 @@ struct HeaderDeatailView: View {
         VStack(alignment: .leading, spacing: 6.0) {
             Text("Protective Gear")
 
-            Text(shop.selectedProduct?.name ?? DataHandler.main.sampleProduct.name)
+            Text(shop.extract {$0.name})
                 .font(.largeTitle)
-                .foregroundColor(Color.black)
+                .fontWeight(.black)
+                .foregroundColor(Color.white)
         }
         .foregroundColor(.white)
     }

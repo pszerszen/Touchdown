@@ -11,4 +11,10 @@ class Shop: ObservableObject {
     
     @Published var showingProduct = false
     @Published var selectedProduct: Product?
+
+    func extract<T>(_ extract: (Product) -> T) -> T {
+        return extract(selectedProduct ?? DataHandler.main.sampleProduct)
+    }
 }
+
+

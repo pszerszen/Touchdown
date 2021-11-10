@@ -23,8 +23,7 @@ struct AddToCartDeatailView: View {
             Spacer()
         }
         .padding(15.0)
-        .background(shop.selectedProduct?.backgroundColor ??
-                    DataHandler.main.sampleProduct.backgroundColor)
+        .background(shop.extract { $0.backgroundColor })
         .clipShape(Capsule())
 
     }

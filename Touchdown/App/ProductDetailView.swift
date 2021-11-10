@@ -21,12 +21,11 @@ struct ProductDetailView: View {
                 .padding(.horizontal)
                 .zIndex(1)
 
-            Spacer()
+            TopPartDetailView()
         }
         .zIndex(0)
         .ignoresSafeArea(.all, edges: .all)
-        .background(shop.selectedProduct?.backgroundColor ??
-                    DataHandler.main.sampleProduct.backgroundColor)
+        .background(shop.extract{$0.backgroundColor})
         .ignoresSafeArea(.all, edges: .all)
     }
 }
