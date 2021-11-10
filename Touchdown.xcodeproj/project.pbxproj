@@ -30,6 +30,7 @@
 		866CF786273BC249006785D0 /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866CF785273BC249006785D0 /* CategoryGridView.swift */; };
 		866CF788273BC3D5006785D0 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866CF787273BC3D5006785D0 /* SectionView.swift */; };
 		866CF78A273BCC4E006785D0 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866CF789273BCC4E006785D0 /* TitleView.swift */; };
+		866CF78C273BD055006785D0 /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866CF78B273BD055006785D0 /* ProductItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		866CF785273BC249006785D0 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
 		866CF787273BC3D5006785D0 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		866CF789273BCC4E006785D0 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		866CF78B273BD055006785D0 /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				86158478273AC2C900A37B86 /* FooterView.swift */,
 				8615847D273ACA0700A37B86 /* LogoView.swift */,
 				8615847B273AC87300A37B86 /* NavigationBarView.swift */,
+				866CF78B273BD055006785D0 /* ProductItemView.swift */,
 				866CF787273BC3D5006785D0 /* SectionView.swift */,
 				866CF789273BCC4E006785D0 /* TitleView.swift */,
 			);
@@ -265,6 +268,7 @@
 				86158479273AC2C900A37B86 /* FooterView.swift in Sources */,
 				866CF782273BB965006785D0 /* FeaturedTabView.swift in Sources */,
 				8615847C273AC87400A37B86 /* NavigationBarView.swift in Sources */,
+				866CF78C273BD055006785D0 /* ProductItemView.swift in Sources */,
 				86158470273ABC0400A37B86 /* Player.swift in Sources */,
 				866CF780273BB888006785D0 /* FeaturedItemView.swift in Sources */,
 				86158476273ABD8900A37B86 /* DataHandler.swift in Sources */,
